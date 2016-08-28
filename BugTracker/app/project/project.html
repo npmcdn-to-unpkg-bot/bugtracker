@@ -1,0 +1,29 @@
+<div class="container">
+    <h3>Projects</h3>
+    <button type="button" class="btn btn-primary">Create New</button>
+    <table st-table="rowCollection" class="table table-striped">
+	<thead>
+	<tr>
+		<th st-sort="name">Name</th>
+		<th st-sort="ASMS">ASMS</th>
+		<th st-sort="creationDate">Creation Date</th>
+		<th st-sort="active">Active</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr ng-repeat="row in rowCollection">
+		<td>{{row.name | uppercase}}</td>
+		<td>{{row.ASMS}}</td>
+		<td>{{row.creationDate | date}}</td>
+		<td>{{row.active}}</td>
+		<td>
+			<button type="button" ng-click="removeRow(row)" class="btn btn-sm btn-danger">
+				<i class="glyphicon glyphicon-remove-circle">
+				</i>
+			</button>
+		</td>
+	</tr>
+	</tbody>
+</table>
+</table>
+</div>

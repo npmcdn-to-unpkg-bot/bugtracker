@@ -5,15 +5,15 @@
 	<thead>
 	<tr>
 		<th st-sort="name">Name</th>
-		<th st-sort="ASMS">ASMS</th>
+		<th st-sort="asms">ASMS</th>
 		<th st-sort="creationDate">Creation Date</th>
 		<th st-sort="active">Active</th>
 	</tr>
 	</thead>
 	<tbody>
-	<tr ng-repeat="row in rowCollection">
+	<tr ng-repeat="row in projects">
 		<td>{{row.name | uppercase}}</td>
-		<td>{{row.ASMS}}</td>
+		<td>{{row.asms}}</td>
 		<td>{{row.creationDate | date}}</td>
 		<td>{{row.active}}</td>
 		<td>

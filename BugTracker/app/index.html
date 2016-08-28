@@ -1,64 +1,66 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="bugTracker" class="no-js">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>BugTracker</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="js/bootstrap-3.3.7/css/bootstrap.css">
-  <link rel="stylesheet" href="js/bootstrap-3.3.7/js/bootstrap.js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BugTracker</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="js/bootstrap-3.3.7/css/bootstrap.css">
+        <link rel="stylesheet" href="js/bootstrap-3.3.7/js/bootstrap.js">
 
-  <link rel="stylesheet" href="app.css">
+        <link rel="stylesheet" href="app.css">
 
-</head>
-<body>
-<div class="container">
-     <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">BugTracker</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#/project">Projects</a></li>
-              <li><a href="#/bug">Bugs</a></li>
-              <li><a href="#/admin">Admin</a></li>    
-            </ul>
-          </div>
-        </div>
-      </nav>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">BugTracker</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#/project">Projects</a></li>
+                            <li><a href="#/bug">Bugs</a></li>
+                            <li><a href="#/admin">Admin</a></li>    
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
-  <div ng-view></div>
+            <div ng-view></div>
 
-   
 
-  
-<div id="footer">
-      <div class="container">
-         <div>Angular seed app: v<span app-version></span></div>
-      </div>
-    </div>
-</div>    
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/angular-1.5.8/angular.js"></script>
-  <script src="js/angular-1.5.8/angular-aria.js"></script>
-  <script src="js/angular-1.5.8/angular-route.js"></script>
-    <script src="js/smart-table/smart-table.js"></script>
-  
-  
-  <script src="app.js"></script>
-  <script src="project/project.js"></script>
-  <script src="bug/bug.js"></script>
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script>
-</body>
+
+
+            <div id="footer">
+                <div class="container">
+                    <div>Angular seed app: v<span app-version></span></div>
+                </div>
+            </div>
+        </div>    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/angular-1.5.8/angular.js"></script>
+        <script src="js/angular-1.5.8/angular-aria.js"></script>
+        <script src="js/angular-1.5.8/angular-route.js"></script>
+        <script src="js/smart-table/smart-table.js"></script>
+
+
+        <script src="app.js"></script>
+        <script src="project/projectsController.js"></script>
+        <script src="project/projectsFactory.js"></script>    
+
+        <script src="bug/bug.js"></script>
+        <script src="components/version/version.js"></script>
+        <script src="components/version/version-directive.js"></script>
+        <script src="components/version/interpolate-filter.js"></script>
+    </body>
 </html>

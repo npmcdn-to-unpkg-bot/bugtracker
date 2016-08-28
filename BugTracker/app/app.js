@@ -5,7 +5,7 @@
     app.config(function($routeProvider) {
         $routeProvider
             .when('/project', {
-                controller: 'ProjectCtrl',
+                controller: 'ProjectsController',
                 templateUrl: 'project/project.html'
             })
                .when('/bug', {
